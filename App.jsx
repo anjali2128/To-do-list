@@ -9,10 +9,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <header className="custom-header">
-        <div className="logo">📋 TaskNest</div>
-        <div className="tagline">Your Daily Goals, Organized</div>
-      </header>
+  
+<header className="tn-header">
+  <div className="tn-left">
+    <div className="planet">🪐</div>
+    <div className="tn-branding">
+      <h1 className="tn-brand">TaskNest</h1>
+      <h2 className="tn-subtitle">Productivity. Organized.</h2>
+    </div>
+  </div>
+
+  <div className="tn-right">
+    <p className="tn-quote">"The secret to success is consistency."</p>
+  </div>
+</header>
+
+
+
+
 
       <Routes>
         <Route path="/" element={<Register />} />
