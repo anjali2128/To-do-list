@@ -152,7 +152,7 @@ function TaskNest() {
   const getPriorityColor = (level) => {
     switch (level) {
       case 'High': return 'danger';
-      case 'Medium': return 'warning';
+      case 'Medium': return 'warning';        
       case 'Low': return 'success';
       default: return 'secondary';
     }
@@ -193,11 +193,9 @@ function TaskNest() {
 
 
           {/* ✅ Updated Time Input */}
-          <Col md={3}>
+          <Col md={2}>
             <InputGroup className="rounded-4">
-              <InputGroup.Text className="bg-white border-end-0">
-                <BsClock />
-              </InputGroup.Text>
+              
 
               <Form.Select
                 value={parseTime(taskTime)[0]}
@@ -242,7 +240,7 @@ function TaskNest() {
             </InputGroup>
           </Col>
 
-          <Col md={1}>
+          <Col md={2}>
             <Form.Select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
