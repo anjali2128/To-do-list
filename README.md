@@ -54,3 +54,47 @@ A sleek and responsive To-Do List application built with **React** and styled us
 
 ## 📁 Project Structure
 
+   To-do-list/
+├── public/                        # Static assets
+│   └── index.html
+├── src/                           # Source code
+│   ├── components/                # All React components & styles
+│   │   ├── Login.jsx
+│   │   ├── Login.css
+│   │   ├── Register.jsx
+│   │   ├── Register.css
+│   │   ├── Todo.jsx
+│   │   └── Todo.css
+│   ├── App.jsx                    # Root component
+│   ├── index.js                   # App entry point
+│   └── main.css (if any)          # Global styles (optional)
+├── package.json                   # Project metadata and dependencies
+├── vite.config.js                 # Vite configuration
+└── README.md                      # Project documentation
+
+
+1. ## 🔐 Authentication Flow (If Login/Register are functional)
+
+- 👤 New users can register via the **Register** form.
+- 🔐 Existing users can log in using their credentials.
+- 🚫 Invalid users are shown error messages.
+- 🔄 Once logged in, users are redirected to the **To-Do Dashboard**.
+- 🔓 Auth is client-side only (no backend). You can extend it with Firebase or your own server.
+
+
+2. ## 💡 Component Overview
+
+- **App.jsx** – Main layout and routing logic
+- **Login.jsx** – Handles user login interface and logic
+- **Register.jsx** – Handles new user registration
+- **Todo.jsx** – Core to-do list logic: add/edit/delete/filter tasks
+- ***.css** – Styles for each component
+
+3. ## 📚 Learning Goals (Especially helpful for portfolio/GitHub readers)
+
+This project helped reinforce concepts like:
+- React functional components and hooks
+- Form handling and validation
+- Client-side routing (React Router)
+- LocalStorage usage for persistence
+- Responsive UI with Bootstrap 5
