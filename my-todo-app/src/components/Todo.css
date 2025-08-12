@@ -1,0 +1,120 @@
+/* Glassmorphism background (optional use on cards) */
+.glass-bg {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 1.5rem;
+}
+
+/* Input and Select fields */
+input,
+select,
+.form-control,
+.form-select,
+.input-group-text {
+  color: #212529;
+  background-color: #fefefe;
+  border: 1px solid #dee2e6;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+  border-color: #86b7fe;
+  outline: none;
+}
+
+/* Dropdown fix for Safari */
+.form-select {
+  appearance: auto;
+}
+
+/* Custom time picker icon */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(35%);
+  cursor: pointer;
+}
+
+/* Button styling */
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Fix InputGroup + Select overlap */
+.input-group > .form-select {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* Task Item Appearance */
+.list-group-item {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Text states */
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Progress bar with pill shape */
+.progress {
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  font-weight: 600;
+  border-radius: 1rem;
+}
+/* Make select dropdowns in InputGroup display properly */
+.input-group > .form-select {
+  flex: 1;
+  min-width: auto;
+}
+
+/* Fix any overflow clipping */
+.input-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+/* Ensure time picker items have enough space */
+.input-group .form-select {
+  min-width: 60px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* Ensure the icon doesn't shrink */
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Debug border (optional) */
+/* .form-select, .input-group-text {
+  border: 1px solid red !important;
+} */

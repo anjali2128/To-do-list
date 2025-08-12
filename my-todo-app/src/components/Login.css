@@ -1,0 +1,119 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #111927, #1c1f2a);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-form-container {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-form-container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #00ffd5;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 2px #00ffd5;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00ffd5, #00b8ff);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover {
+  filter: brightness(1.1);
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.register-link a {
+  color: #00ffd5;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+/* Header Styles */
+.custom-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-button .home-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(to right, #00ffd5, #00b8ff);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.home-button .home-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* Push form down to avoid header overlap */
+.login-form-container {
+  margin-top: 80px;
+}
